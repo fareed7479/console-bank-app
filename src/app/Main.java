@@ -16,8 +16,8 @@ public class Main {
                             3) Withdraw
                             4) Transfer
                             5) Account Details
-                            6) Search Accounts by Customer Name
-                            7) List Accounts
+                            6) List Accounts
+                            7) Search Accounts by Customer Name
                             0) Exit
                     """);
 
@@ -27,9 +27,39 @@ public class Main {
             System.out.print("Selected Option : " + choice);
 
             switch(choice){
+
+                //Scanner is passed to read other inputs related to related Function.
+                case "1" : openAccount(sc);
+                case "2" : deposit(sc);
+                case "3" : withdraw(sc);
+                case "4" : transfer(sc);
+                case "5" : statement(sc);
+                case "6" : listAccounts(sc);
+                case "7" : searchAccounts(sc);
                 case "0" : running = false;
             }
         }
 
+    }
+
+    private static void openAccount(Scanner sc) {
+    }
+
+    private static void deposit(Scanner sc) {
+    }
+
+    private static void withdraw(Scanner sc) {
+    }
+
+    private static void transfer(Scanner sc) {
+    }
+
+    private static void statement(Scanner sc) {
+    }
+
+    private static void listAccounts(Scanner sc) {
+    }
+
+    private static void searchAccounts(Scanner sc) {
     }
 }
